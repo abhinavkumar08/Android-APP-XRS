@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xpedite">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.xpedite.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xpedite.activity.login.SignInActivity">
+            <intent-filter>
+                <action android:name="com.xpedite.activity.login.SignInActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xpedite.activity.login.SignUpActivity">
+            <intent-filter>
+                <action android:name="com.xpedite.activity.login.SignUpActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xpedite.activity.login.UserProfileActivity" />
+        <activity android:name="com.xpedite.activity.OTPActivity" />
+        <activity android:name="com.xpedite.activity.request.PickupRequestActivity" />
+        <activity android:name="com.xpedite.activity.address.PickupFromNewAddressActivity" />
+        <activity android:name="com.xpedite.activity.address.EditAddressActivity" />
+        <activity android:name="com.xpedite.activity.count.TyreCountDetailsActivity" />
+        <activity android:name="com.xpedite.activity.request.SubmitRequestActivity" />
+        <activity android:name="com.xpedite.activity.request.RequestCompletedActivity" />
+        <activity android:name="com.xpedite.activity.orders.UserPickupHistory" />
+        <activity android:name="com.xpedite.activity.count.TyreCountFinalDetail" />
+        <activity android:name="com.xpedite.activity.count.ConfirmTyreCountAndAmountActivity" />
+        <activity android:name="com.xpedite.activity.error.ErrorActivity" />
+        <activity android:name="com.xpedite.activity.login.ForgotPasswordActivity" />
+        <activity android:name="com.xpedite.activity.login.ResetPasswordActivity" />
+        <activity android:name="com.xpedite.activity.orders.EachOrder" />
+        <activity android:name="com.xpedite.activity.UserPin"></activity>
+    </application>
+
+</manifest>
